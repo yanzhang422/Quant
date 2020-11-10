@@ -207,9 +207,11 @@ Actually, deep learning also could be considered as linear model, because most o
 
 ### An example for linear vs quadratic model 
 There are multiple linear/regression lines can be set up to sepereate the data, the line with minimize **MSE** value will be selected.
+
 ![Multiple regression line](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/multiple%20regression%20line.png)
 
 MSE (Mean square error)  calculates the residual for every data point, taking squares value of each, after that summing them all, then take the average of all these residuals.
+
 ![MSE](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/MSE.jpg)
 $MSE = \frac{1}{n}\sum(y-\hat{y})^2$
 $\frac{1}{n}\sum$ is the input (test) dataset, $y$ is predict value, $\hat{y}$ is actual value, $(y-\hat{y})$ is the difference between actual and predicted. The machine learning model will automatically learned a regression line which with the smallest MSE value, using this linear line to seperate the data. 
@@ -220,6 +222,7 @@ Compare with a linear model $\hat{f}_L(X) = \hat{\beta_0} + \hat{\beta_1X}$, it 
 ### An example for non-linear and liner model in 3D
 There are two predictors used to estimate income. 
 Years of education and seniority are fit by a non-linear 3-dimensional surface
+
 ![Non-liear fit](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/Non-linear%20fit%20for%20income.png)
 
 $income = f(education, seniority) + \epsilon$ 
@@ -238,6 +241,7 @@ The model $\hat{f_s}(education, seniority$ fits to the red points without errors
 
 ## The Trade-Off Between linear and non-linear model
 Normally a model with higher flexibility (complexity), the learned $f$ will be in non-linear and it will have less interpretability, eg. SVM, NN. A model with lower flexibility (complexity), the learned $f$ will be in linear and easy to understand, eg. Subset Selection, Lasso.
+
 ![Model complexity](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/Model%20complexity.png)
 
 Suppose we have fit a model $\hat{f}(x)$ to some training data $T_r$, and let $(x_0, y_0)$ be a test observation drawn from the population. If the true model is $Y=f(X)+\epsilon$ (with $f(x)=E(Y|X=x)$), then 
