@@ -70,8 +70,9 @@ Most of the developing issues you could find answer in [stackoverflow], try solv
  Using machine learning technicals to analaysis/learn from history data (big data) to know the beta value.
  
 * Some Grahpical interpretations
-  **CAPM Model**
+  **CAPM Model**  
 ![CAPM](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/SCL-plot.png)
+
 Using SVM model linearly learn the history data, the linear line is the CAPM model, but you will see all the history data could not be perfectly seperated by linear line.
 
 * Passively managed funds and actively managed funds
@@ -148,6 +149,7 @@ It is another index to help machine learning analysis. Consider there is a funct
 
 ### An example regarding to linear regression line
 ![Linearline](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/Linear%20regressions%20of%20Sales%20vs.%20TV%2C%20Radio%2C%20Newspaper.png)
+
 Above figure shown **Sales** vs **TV**, **Radio** and **Newspaper**, with a blue linear regression line fit seperately to each. If we consider the Sales can be predicted using TV, Radio and Newspaper, then we can build a model, $Sales \approx f(TV, Radio, Newspaper)$, here **Sales** is a response or target hat we wish to predict. We generically refer to the response as $y$.
 **TV** is a feature, or input, or predictor, we name it $X_1$. Likewise name **Radio** as $X_2$, and so on. We can refer to the input vector collectively as
 
@@ -185,10 +187,12 @@ This idea $f(x)=E(Y|X=x)$ is called the **regression function**.
 $\hat{f}(x) = Ave(Y|X \: \epsilon \:N(x))$
 where $N(x)$ is some **neighborhood** of $x$.
 ![KNN neighbor](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/KNN%20neighborhood.PNG)
+
 KNN has dimension problems, in one dimension, it without problem, when the dim(x) > 10, the KNN model performance will be decreased sharply, it caused by dimensional disaster problem, searching KNN in high dimension, it nearly search in entire high dimension space, so analysis data with high dimension, we will use other more complex machine learning model. 
 
 ### An example for linear model with high dimension
 ![Linear Activation](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/linear.png)
+
 The **linear** model is an important example of a parametric model:
 
 $f_L(X) = \beta_0 +\beta_1X_1+\beta_2X_2+...+\beta_pX_p$
@@ -198,16 +202,19 @@ $f_L(X) = \beta_0 +\beta_1X_1+\beta_2X_2+...+\beta_pX_p$
 
 If $f_L(x)$ is current stock price, $X_1$ as MA5, $X_2$ as MA10, $X_3$ as MACD, this linear model can present the stock price is linearly with the market indicator. 
 ![ReLU Activation](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/ReLU.png)
+
 Actually, deep learning also could be considered as linear model, because most of DL models are using ReLU activation, it is non-linear transformation which very close to linear transformation, there is an interesting research paper [Fooling CNN] talking about it. So, linear model also could good handle high dimension data, not only non-linear model.
 
 ### An example for linear vs quadratic model 
 There are multiple linear/regression lines can be set up to sepereate the data, the line with minimize **MSE** value will be selected.
 ![Multiple regression line](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/multiple%20regression%20line.png)
+
 MSE (Mean square error)  calculates the residual for every data point, taking squares value of each, after that summing them all, then take the average of all these residuals.
 ![MSE](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/MSE.jpg)
 $MSE = \frac{1}{n}\sum(y-\hat{y})^2$
 $\frac{1}{n}\sum$ is the input (test) dataset, $y$ is predict value, $\hat{y}$ is actual value, $(y-\hat{y})$ is the difference between actual and predicted. The machine learning model will automatically learned a regression line which with the smallest MSE value, using this linear line to seperate the data. 
 ![linear vs quadratic](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/Basic%20linear%20and%20quadratic%20model.png)
+
 Compare with a linear model $\hat{f}_L(X) = \hat{\beta_0} + \hat{\beta_1X}$, it gives the reasonable fit is slightly worse than a quadratic model $\hat{f}_Q(X) = \hat{\beta_0} + \hat{\beta_1X} +\hat{\beta_1X^2}$. So, what kind of model is better? It is based on your knowledge of the data, it could be linear or quadratic, the best way to validate and select a model, it need some testing data to validate, those data never be used for model training. Finally, we choose the model which with the smallest MSE value.
 
 ### An example for non-linear and liner model in 3D
@@ -243,6 +250,7 @@ Explained above phenomenon in machine learning, it means when the model fitting 
 
 # Reference for self-study
 Classical statistical book: [The Elements of Statistical Learning]
+
 Course of Introduction To Statistical Learning: [Introduction To Statistical Learning]
 
 Next Session
