@@ -54,6 +54,7 @@ Most of the developing issues you could find answer in [stackoverflow], try solv
 
 ## CAPM Model
 * Asset Portfolio [a\%, b\%, c\%]
+
   |(a\%)| + |(b\%)| + |(c\%)| = 100\%
 * Market Portfolio
   1. SP500
