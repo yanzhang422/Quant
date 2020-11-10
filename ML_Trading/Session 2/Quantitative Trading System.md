@@ -54,7 +54,7 @@ Most of the developing issues you could find answer in [stackoverflow], try solv
 
 ## CAPM Model
 * Asset Portfolio [$a\%$, $b\%$, $c\%$]
-  $\displaystyle |(a\%)|$ + $\displaystyle |(b\%)|$ + $\displaystyle |(c\%)|$ = $100\%$
+  $|(a\%)|$ + $|(b\%)|$ + $|(c\%)|$ = $100\%$
 * Market Portfolio
   1. SP500
   2. DOW J
