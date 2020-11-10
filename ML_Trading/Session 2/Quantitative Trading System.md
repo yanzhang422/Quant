@@ -53,8 +53,8 @@ Self learning for [sklearn].
 Most of the developing issues you could find answer in [stackoverflow], try solve your questions using google first, it is also a skill as quant.
 
 ## CAPM Model
-* Asset Portfolio [$a\%$, $b\%$, $c\%$]
-  |(a$\%$)| + |(b$\%$)| + |(c$\%$)| = $100\%$
+* Asset Portfolio [$$a\%$$, $$b\%$$, $$c\%$$]
+  $$\displaystyle |(a\%)|$$ + $$\displaystyle |(b\%)|$$ + $$\displaystyle |(c\%)|$$ = $$100\%$$
 * Market Portfolio
   1. SP500
   2. DOW J
