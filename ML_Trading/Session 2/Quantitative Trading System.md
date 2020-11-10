@@ -82,17 +82,17 @@ Using SVM model linearly learn the history data, the linear line is the CAPM mod
 **Key point**: in above formular, passively managed funds think that the alpha is random noise, the exepctation of alpha is zero, in $r_m(t)$ already includes all the market information, it is hopeless to get profit from the market. Actively managed funds think the $\displaystyle \alpha_i(t)$ with the meaning, through disassebling it, can find more variables to get arbitrage. This means, in machine learning function f(x), it not just with variable rm, it will also include other varables, eg. MA5, MACD, etc.
 
 ## CAPM portfolio model
-$\begin{aligned}
+$$\begin{aligned}
 r_p(t) & =\sum_i W_i \cdot P_i(t) \\
 & = \sum_i W_i (\beta_i r_m(t)+\alpha_i(t)) \\
 & = \sum_i[W_i\beta_ir_m(t)+W_i\alpha_i(t)] \\
 &=\sum_iW_i\beta_ir_m(t) + \sum_iW_i\alpha_i(t) \\
 r_p(t) &=\beta_pr_m(t) + \begin{cases}\alpha_p(t)\\ - \end{cases}\\
-\end{aligned}$
+\end{aligned}$$
 
 In case we have three stocks in the portfolio, at time t, the return of portfolio is $r_p(t)$, at right side, expand the $P_i(t)$ in CAPM model, then we add the weight value $W_i$ into CAPM model, get CAPM portfolio model. Then we transfer $W_i\beta_i$ to be $\beta_p$, the beta of a portfolio is the weighted average of the assets that make up the portfolio, there is linear relationship between the portfolio and the market.
 
-  **CAPM Portfolio Model**
+  **CAPM Portfolio Model** 
 ![CAPM Portfolio](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/CAPM%20Portfolio%20Model.gif)
 
 ## Some inference
@@ -153,7 +153,7 @@ It is another index to help machine learning analysis. Consider there is a funct
 Above figure shown **Sales** vs **TV**, **Radio** and **Newspaper**, with a blue linear regression line fit seperately to each. If we consider the Sales can be predicted using TV, Radio and Newspaper, then we can build a model, $Sales \approx f(TV, Radio, Newspaper)$, here **Sales** is a response or target hat we wish to predict. We generically refer to the response as $y$.
 **TV** is a feature, or input, or predictor, we name it $X_1$. Likewise name **Radio** as $X_2$, and so on. We can refer to the input vector collectively as
 
-$\bar{x}_3 = \left(\begin{matrix}X_1 \\X_2 \\ X_3 \end{matrix}\right)$
+$$\bar{x}_3 = \left(\begin{matrix}X_1 \\X_2 \\ X_3 \end{matrix}\right)$$
 
 Now we write the model as
 
@@ -165,7 +165,7 @@ where $\epsilon$ captures measurement errors and other discrepancies. It incase 
 - Depending on the complexity of $f$, we may be able to understand how each component $X_j$ of X affects $Y$. 
 
 ### An example regarding to regression function
-The simplese model is KNN (k-nearest neighbors algorithm), suppose we have history data, we have the model $f$ without defined input $\bar{x}$, but base on history data, if there is a new input value $x^*$, according to the history data distribtuion, we know what the present value $y$ for the new input value $x^*$ could be. eg. new input value $x^* = 5.7$, check in history data, we could have
+The simplese model is KNN (k-nearest neighbors algorithm), suppose we have history data, we have the model $f$ without defined input $\bar{x}$, but base on history data, if there is a new input value $x^* $, according to the history data distribtuion, we know what the present value $y$ for the new input value $x^* $ could be. eg. new input value $x^* = 5.7$, check in history data, we could have
 |$x$|$y$|
 |---|---|
 |5.7|1.2|
