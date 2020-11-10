@@ -70,6 +70,7 @@ Most of the developing issues you could find answer in [stackoverflow], try solv
  Using machine learning technicals to analaysis/learn from history data (big data) to know the beta value.
  
 * Some Grahpical interpretations
+
   **CAPM Model**  
 ![CAPM](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/SCL-plot.png)
 
@@ -82,6 +83,7 @@ Using SVM model linearly learn the history data, the linear line is the CAPM mod
 **Key point**: in above formular, passively managed funds think that the alpha is random noise, the exepctation of alpha is zero, in $r_m(t)$ already includes all the market information, it is hopeless to get profit from the market. Actively managed funds think the $\displaystyle \alpha_i(t)$ with the meaning, through disassebling it, can find more variables to get arbitrage. This means, in machine learning function f(x), it not just with variable rm, it will also include other varables, eg. MA5, MACD, etc.
 
 ## CAPM portfolio model
+
 $$\begin{aligned}
 r_p(t) & =\sum_i W_i \cdot P_i(t) \\
 & = \sum_i W_i (\beta_i r_m(t)+\alpha_i(t)) \\
@@ -92,7 +94,7 @@ r_p(t) &=\beta_pr_m(t) + \begin{cases}\alpha_p(t)\\ - \end{cases}\\
 
 In case we have three stocks in the portfolio, at time t, the return of portfolio is $r_p(t)$, at right side, expand the $P_i(t)$ in CAPM model, then we add the weight value $W_i$ into CAPM model, get CAPM portfolio model. Then we transfer $W_i\beta_i$ to be $\beta_p$, the beta of a portfolio is the weighted average of the assets that make up the portfolio, there is linear relationship between the portfolio and the market.
 
-  **CAPM Portfolio Model** 
+**CAPM Portfolio Model** 
 ![CAPM Portfolio](https://github.com/yanzhang422/Quant/blob/master/ML_Trading/Session%202/IMG/CAPM%20Portfolio%20Model.gif)
 
 ## Some inference
