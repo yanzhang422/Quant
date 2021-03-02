@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/yanzhang81/Quant/edit/mast
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-**Stock Price Prediction By LTSM.py** is the stock price prediction strategy for next day price, it using 60% history data fit the model, the 30% rest of history data to test the model, the 10% history data to predict the next day price.
+**Stock Price Prediction By LTSM.ipynb** is the stock price prediction strategy for next day price, it using 60% history data fit the model, the 30% rest of history data to test the model, the 10% history data to predict the next day price.
 
 **Stock Price Prediction using Deep Learning with Python.ipynb** using 60% history data fit the model, 40% history data test the model and do the next day price prediction.
 
