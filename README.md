@@ -8,6 +8,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 **Stock Price Prediction using Deep Learning with Python.ipynb** using 60% history data fit the model, 40% history data test the model and do the next day price prediction.
 
+**Predict Stock Price with Linear Regression in Python.ipynb** using 70% history data fit the model, 30% history data test and predict the next 3 days price, it uses machine learning method, Linear regression trains the model.
+
 
 
 ### Markdown
