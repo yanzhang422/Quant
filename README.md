@@ -40,7 +40,8 @@ Following companies have been executed in Stock Price Prediction By LTSM.py, som
 25. PLTR Palantir - 0%
 26. AYX Alteryx - 60% match
 27. GME Gamestop - 80% match
-28. 
+========Following Companies with bitcoin as hedge risk invest===================
+29. SQ Square - 
 
 
 # Header 1
